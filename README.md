@@ -7,7 +7,7 @@ You could use your Google Colab, Kaggle, or even your own computer (with GPU for
 1. **Clone the github repository:** `git clone https://github.com/luongdinhdung123/Few_shot_learning_for_LLM`. 
 
 2. **Install the required libraries:**
-    - Open the folder: `cd lm-evaluation-harness`
+    - Open the folder: `cd Few_shot_learning_for_LLM`
     - Install the required libraries: `pip install -e .`
 
 3. **Run the evaluation for your models:**
@@ -20,8 +20,8 @@ lm_eval \
 --tasks wikipediaqa_vi \
 --num_fewshot 5 \
 --device cuda:0 \
---output_path /kaggle/working/lm-evaluation-harness \
---log_samples \
+--output_path /kaggle/working/Few_shot_learning_for_LLM \
+--log_samples
 ```
 
 - For vi_lambada:
@@ -33,8 +33,8 @@ lm_eval \
 --tasks lambada_vi \
 --num_fewshot 5 \
 --device cuda:0 \
---output_path /kaggle/working/lm-evaluation-harness \
---log_samples \
+--output_path /kaggle/working/Few_shot_learning_for_LLM \
+--log_samples
 ```
 
 - For vi_comprehension:
@@ -45,8 +45,8 @@ lm_eval \
 --tasks comprehension_vi \
 --num_fewshot 5 \
 --device cuda:0 \
---output_path /kaggle/working/lm-evaluation-harness \
---log_samples \
+--output_path /kaggle/working/Few_shot_learning_for_LLM \
+--log_samples
 ```
 
 - For vi_exams:
@@ -57,8 +57,8 @@ lm_eval \
 --tasks exams_diali_vi, exams_lichsu_vi, exams_hoahoc_vi, exams_sinhhoc_vi, exams_vatli_vi, exams_toanhoc_vi, exams_vanhoc_vi \
 --num_fewshot 5 \
 --device cuda:0 \
---output_path /kaggle/working/lm-evaluation-harness \
---log_samples \
+--output_path /kaggle/working/Few_shot_learning_for_LLM \
+--log_samples
 ```
 
 - You can read the `docs` and `examples` folder to understand more!
@@ -66,4 +66,7 @@ lm_eval \
     - [Github Repo for References](https://github.com/EleutherAI/lm-evaluation-harness)
     - [Paper: ViLLM-Eval: A Comprehensive Evaluation Suite for Vietnamese Large Language Models](https://arxiv.org/pdf/2404.11086)
 
-
+5. **Notebook demo:**
+    - [LoRA finetuning](https://github.com/luongdinhdung123/Few_shot_evaluation_for_LLM/blob/main/examples/lora-finetune-demo.ipynb)
+    - [Evaluation demo](https://github.com/luongdinhdung123/Few_shot_evaluation_for_LLM/blob/main/examples/lm-eval-after-lora-finetune.ipynb)
+    - [Other LoRA finetuning](https://github.com/luongdinhdung123/Few_shot_evaluation_for_LLM/blob/main/examples/other-lora-finetune-demo.ipynb)
