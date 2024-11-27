@@ -4,7 +4,7 @@ def process_docs(dataset: datasets.Dataset):
     def _helper(doc):
       # modifies the contents of a single
       # document in our dataset.
-      doc["question"] = "Question: " + doc["question"]
+      doc["question"] = "Question: " + doc["question"] + "\nAnswer: "
       doc["choices"] = doc["choices"]["text"]
       doc["gold"] = ["A", "B", "C", "D"].index(doc["answerKey"].strip())
       if getattr(doc, "few_shot", None) is not None:
