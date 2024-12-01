@@ -1,0 +1,13 @@
+group: exams_all_vi_small
+task:
+  - exams_diali_vi_small
+  - exams_hoahoc_vi_small
+  - exams_lichsu_vi_small
+  - exams_sinhhoc_vi_small
+  - exams_toanhoc_vi_small
+  - exams_vanhoc_vi_small
+  - exams_vatli_vi_small
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: true
