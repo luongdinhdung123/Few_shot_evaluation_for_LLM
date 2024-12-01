@@ -1,0 +1,13 @@
+group: exams_all_vi_big
+task:
+  - exams_diali_vi_big
+  - exams_hoahoc_vi_big
+  - exams_lichsu_vi_big
+  - exams_sinhhoc_vi_big
+  - exams_toanhoc_vi_big
+  - exams_vanhoc_vi_big
+  - exams_vatli_vi_big
+aggregate_metric_list:
+  - metric: acc
+    aggregation: mean
+    weight_by_size: true
