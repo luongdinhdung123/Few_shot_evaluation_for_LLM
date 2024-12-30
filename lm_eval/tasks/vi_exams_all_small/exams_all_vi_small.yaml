@@ -8,9 +8,6 @@ task:
   - exams_vanhoc_vi_small
   - exams_vatli_vi_small
 aggregate_metric_list:
-  - metric: acc
-    aggregation: mean
-    weight_by_size: true
   - metric: acc_norm
     aggregation: mean
     weight_by_size: true
